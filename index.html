@@ -1,0 +1,287 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R.E.P.O. - Official Fan Site</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #080808;
+            color: white;
+        }
+
+        header {
+            background: #111;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #e50914;
+        }
+
+        .logo {
+            font-size: 32px;
+            font-weight: bold;
+            color: #e50914;
+            letter-spacing: 4px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #e50914;
+        }
+
+        .hero {
+            min-height: 600px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+            background:
+                linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.9)),
+                url("https://images.unsplash.com/photo-1518709268805-4e9042af9f23");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero h1 {
+            font-size: 90px;
+            color: #e50914;
+            letter-spacing: 10px;
+            text-shadow: 0 0 25px red;
+        }
+
+        .hero p {
+            font-size: 22px;
+            margin: 20px 0;
+            max-width: 600px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 15px 35px;
+            background: #e50914;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            background: white;
+            color: #e50914;
+            transform: scale(1.05);
+        }
+
+        section {
+            padding: 70px 10%;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 40px;
+            margin-bottom: 40px;
+            color: #e50914;
+        }
+
+        .about {
+            text-align: center;
+            line-height: 1.8;
+            font-size: 18px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: #151515;
+            padding: 30px;
+            border: 1px solid #333;
+            border-radius: 10px;
+            transition: 0.3s;
+            text-align: center;
+        }
+
+        .card:hover {
+            border-color: #e50914;
+            transform: translateY(-10px);
+            box-shadow: 0 0 20px #e5091444;
+        }
+
+        .card h3 {
+            color: #e50914;
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+
+        .card p {
+            color: #ccc;
+            line-height: 1.6;
+        }
+
+        .warning {
+            background: #180808;
+            text-align: center;
+            border-top: 1px solid #e50914;
+            border-bottom: 1px solid #e50914;
+        }
+
+        .warning h2 {
+            color: red;
+        }
+
+        footer {
+            background: #111;
+            text-align: center;
+            padding: 25px;
+            color: #777;
+        }
+
+        @media(max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            nav a {
+                margin: 8px;
+                font-size: 14px;
+            }
+
+            .hero h1 {
+                font-size: 55px;
+            }
+
+            .hero p {
+                font-size: 17px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">R.E.P.O.</div>
+
+    <nav>
+        <a href="#home">Главная</a>
+        <a href="#about">Об игре</a>
+        <a href="#features">Особенности</a>
+        <a href="#monsters">Монстры</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <h1>R.E.P.O.</h1>
+
+    <p>
+        Добро пожаловать в мир ужаса!
+        Собирай ценные предметы, избегай монстров
+        и постарайся выжить вместе с друзьями.
+    </p>
+
+    <a href="#about" class="button">ИССЛЕДОВАТЬ</a>
+</section>
+
+<section id="about">
+    <h2>ОБ ИГРЕ</h2>
+
+    <div class="about">
+        <p>
+            R.E.P.O. — кооперативная хоррор-игра,
+            в которой игрокам предстоит исследовать
+            опасные места, искать ценные предметы
+            и доставлять их в безопасное место.
+        </p>
+
+        <br>
+
+        <p>
+            Но будь осторожен! В темноте скрываются
+            опасные существа. Работай в команде,
+            сохраняй спокойствие и не забывай:
+            каждый предмет имеет значение!
+        </p>
+    </div>
+</section>
+
+<section id="features">
+    <h2>ОСОБЕННОСТИ ИГРЫ</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>👥 Кооператив</h3>
+            <p>
+                Играй с друзьями и вместе
+                преодолевайте опасности.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>👻 Монстры</h3>
+            <p>
+                Встречай страшных существ,
+                которые могут появиться в любой момент.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>💰 Сокровища</h3>
+            <p>
+                Ищи ценные предметы и зарабатывай
+                деньги для выполнения заданий.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>💀 Выживание</h3>
+            <p>
+                Избегай опасностей и постарайся
+                вернуться живым.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section class="warning" id="monsters">
+    <h2>⚠ ОСТОРОЖНО: МОНСТРЫ!</h2>
+
+    <p>
+        Не шуми. Не теряй друзей.
+        И главное — не оставайся один в темноте.
+    </p>
+</section>
+
+<footer>
+    <p>R.E.P.O. Fan Website © 2026</p>
+    <p>Неофициальный фан-сайт игры R.E.P.O.</p>
+</footer>
+
+</body>
+</html>
